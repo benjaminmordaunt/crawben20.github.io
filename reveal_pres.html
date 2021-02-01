@@ -35,6 +35,18 @@
      * Audio waveform generation from CPU model-dependent and not well understood
    </textarea>
  </section>
+ <section data-markdown data-separator="^\r?\n---\r?\n$" data-auto-animate>
+   <textarea data-template>
+    ## Back to the CPU
+    * In the dev scene, the CPU's ISA is often dubbed GBZ80.
+    * A 100% ISA compatible core was found - the Sharp SM83xx
+    ** Entertainingly, a Sharp document claims the primary use as being in _air conditioners_.
+    * The GBZ80 omits several staples of the 8080/Z80 ISA...
+    ** DJNZ - useful in loop structures, gone.
+    ** A second set of registers, originally used for rapid interrupt servicing, gone.
+    ** A few other irritating omissions which require slow work-arounds.
+  </textarea>
+</section>
   </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.js"></script>
