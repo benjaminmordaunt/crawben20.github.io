@@ -3,6 +3,11 @@
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/theme/moon.min.css">
+    <style>
+    .reveal section p {
+      font-size: 0.8em !important;
+    }
+    </style>
   </head>
   <body>
   <div class="reveal">
@@ -53,7 +58,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/markdown/markdown.min.js"></script>
   <script>
     Reveal.initialize({
-      plugins: [ RevealMarkdown ]
+      plugins: [ RevealMarkdown ],
+      center: false
     });
   </script>
   </body>
