@@ -60,7 +60,7 @@
    * The SRAM shares the same address bus as the external cartridge memory.
      * GB selects between them by using A14 to drive a second CE input to SRAM, so if
        ```verilog
-         addr AND (1 << 14) == 1
+       addr AND (1 << 14) == 1
        ```,
        SRAM drives bus.
  </textarea>
