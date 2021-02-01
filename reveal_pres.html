@@ -52,6 +52,15 @@
       * A few other irritating omissions which require slow work-arounds.
   </textarea>
 </section>
+<section data-markdown data-separator="^\r?\n---\r?\n$">
+  <textarea data-template>
+   ## SRAM
+   * The Sharp LH5264 (SRAM) can store 8192 8-bit words.
+   * The SRAM shares the same address bus as the external cartridge memory.
+     * GB selects between them by using A14 to drive a second CE input to SRAM.
+       So if ```addr AND (1 << 14) == 1```, SRAM drives bus.
+ </textarea>
+</section>
   </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.js"></script>
