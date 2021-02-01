@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/theme/moon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/agate.min.css">
     <style>
-    .reveal section ul {
-      font-size: 0.8em !important;
-    }
-    .reveal .hljs-inline {
-      font-size: inherit !important;
-      display: inline !important;
-      background-color: transparent !important;
-    }
+      .reveal section ul {
+        font-size: 0.8em !important;
+      }
+      .reveal .hljs-inline {
+        font-size: inherit !important;
+        display: inline !important;
+        background-color: transparent !important;
+      }
     </style>
   </head>
   <body>
@@ -63,7 +63,7 @@
    ## SRAM
    * The Sharp LH5264 (SRAM) can store 8192 8-bit words.
    * The SRAM shares the same address bus as the external cartridge memory.
-     * GB selects between them by using A14 to drive a second CE input to SRAM, so if <br/><pre class="hljs-inline"><code class="verilog">addr & (1 << 14) == 1</code></pre>... SRAM drives bus.
+     * GB selects between them by using A14 to drive a second CE input to SRAM, so if <br/><pre class="hljs-inline"><code class="verilog hljs-inline">addr & (1 << 14) == 1</code></pre>... SRAM drives bus.
  </textarea>
 </section>
   </div>
